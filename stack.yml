@@ -1,0 +1,9 @@
+provider:
+  name: openfaas
+  gateway: http://kube-test:31112
+
+functions:
+  node-simple3:
+    lang: node-foxx
+    handler: api3
+    image: 192.168.1.109:8088/faas/node-simple3

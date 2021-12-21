@@ -1,0 +1,21 @@
+{
+  "name": "openfaas-function",
+  "version": "1.0.0",
+  "description": "OpenFaaS Function",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "deploy": "faas-cli build && docker push 192.168.1.109:8088/faas/node-simple3 && faas-cli deploy -f stack.yml"
+  },
+  "keywords": [],
+  "author": "OpenFaaS Ltd",
+  "license": "MIT",
+  "dependencies": {
+    "@jimizai/driver-koa": "^2.0.32",
+    "@jimizai/injectable": "^2.1.2",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4"
+  }
+}
